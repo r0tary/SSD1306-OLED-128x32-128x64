@@ -1,7 +1,7 @@
-                /*SSD1306 128x32 OLED Display library, via I2C communication
+                /*SSD1306 128x64 OLED Display library, via I2C communication
                             Written by r0tary (G.R), student at SDU 
         
-        Version 1. released 25.05.2022.
+        Version 2.0
              Feutures include:
                 - Turn on any pixel(draw_Pixel), on specified X and Y coordinates
                 - Draw/Print ASCII characters(draw_Char), on specified coordinates
@@ -15,7 +15,7 @@
                 -Initiliazie I2C(i2c_init), Initiliaze SSD1306(SSD1306_setup)
                 -Clear and update the display using SSD1306_clear and SSD1306_update
                 -Grids* are turned OFF by default. Grids divide the usable display in 128/5 and 32/8. Used so vertically no characters will overlap.
-If grids are on it is just like a 25x4 LCD screen. When writing address with grids on you specify the grid not tyhe coordinate...
+If grids are on it is just like a 25x8 LCD screen. When writing address with grids on you specify the grid not tyhe coordinate...
 ...i.e. draw char at x coordinate 40 and 16 y coordinate would be draw_Char(0xhex,5,2).
                 - After using drawing/printing functions use SSSD1306_update to push the pixels to the display.
                 - Use SSD1306_clear to clear all pixels from the display (all pixels set to 0)
